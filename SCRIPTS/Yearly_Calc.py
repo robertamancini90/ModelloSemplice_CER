@@ -3,9 +3,7 @@ import numpy as np
 import pandas as pd
 
 def Yearly_Calculations(PV_plant, battery, consumption, economy):
-    
-    tic =  time.perf_counter()
-    
+        
     df = pd.DataFrame()
     
     # Import battery input
@@ -148,8 +146,5 @@ def Yearly_Calculations(PV_plant, battery, consumption, economy):
     economy_output = {'Capacity_Battery':Capacity_Battery, 'CAPEX_battery_specifico':CAPEX_battery_specifico, 'PV_kWp':PV_kWp, 'Energia_Prodotta_PV':Energia_Prodotta_PV , 'Energia_Scarica_Batteria':Energia_Scarica_Batteria, 'Energia_Ricarica_Batteria':Energia_Ricarica_Batteria, 'Energia_Prelevata_Extra':Energia_Prelevata_Extra, 
 'Energia_Prelevata_tot': Energia_Prelevata_tot, 'Energia_Immessa_In_Rete_extra':Energia_Immessa_In_Rete_extra, 'Energia_Consumi':Energia_Consumi,'Energia_Condivisa_PV':Energia_Condivisa_PV,'Energia_Condivisa_Batteria':Energia_Condivisa_Batteria,'Energia_Condivisa':Energia_Condivisa,'Energia_Immessa_In_Rete':Energia_Immessa_In_Rete,'Ritorno_MISE':Ritorno_MISE,'Ritorno_ARERA':Ritorno_ARERA,'Ritorno_RID':Ritorno_RID,'Totale_Ricavi':Totale_Ricavi,'Perc_EnergiaCondivisa':Perc_EnergiaCondivisa,'Perc_EnergiaCondivisa_PV':Perc_EnergiaCondivisa_PV,'Perc_EnergiaCondivisa_Batteria':Perc_EnergiaCondivisa_Batteria,'CAPEX_PV':CAPEX_PV,'CAPEX_battery':CAPEX_battery,'OPEX':OPEX,'InverterCost':InverterCost, 'Cicli batteria': CICLI_Batteria}
     
-    
-    toc =  time.perf_counter()
-    print('Elapsed time ', round(toc-tic,2), 'sec')
     
     return df, energy_balance, economy_output
