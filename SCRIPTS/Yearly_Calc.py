@@ -138,7 +138,11 @@ def Yearly_Calculations(PV_plant, battery, consumption, economy):
 
     Bilancio_Batteria = df['Energia immagazzinata in batteria, kWh'][-1]-df['Energia immagazzinata in batteria, kWh'][0] -Bilancio_Batteria_.sum()
     
-    CICLI_Batteria = df['Energia ricarica batteria, kWh'].sum()/Useful_Capacity
+    if Useful_Capacity == 0:
+        CICLI_Batteria = 0
+    else:
+        
+        CICLI_Batteria = df['Energia ricarica batteria, kWh'].sum()/Useful_Capacity
 
     
     energy_balance = {'Conservazione Energia':energy_balance.sum(), 'Bilanci batteria': [Bilancio_Batteria, Bilancio_Batteria_1] }

@@ -1,0 +1,17 @@
+;0
+Taglia FV kWp;100,0
+Taglia batteria kWh;0,0
+Consumi annuali kWh/anno;147978,75
+Investimento FV EUR;120000,0
+Investimento accumulo EUR;0,0
+Costi operativi EUR/anno;4200,0
+Costi riampiazzo inverter EUR/anno;12000,0
+Energia condivisa FV kWh/anno;46572,348454532
+Energia condivisa batteria kWh/anno;0,0
+Totale energia immessa in rete kWh/anno;123463,22745442402
+Totale energia prelevata dalla rete kWh/anno;147978,75
+Ricavo MISE EUR/anno;5122,958329998521
+Sgravio ARERA EUR/anno;372,57878763625604
+Vendita energia elettrica EUR/anno;6173,161372721202
+Tempo di ritorno senza detrazioni;16,1
+Tempo di ritorno con detrazioni;9,8
